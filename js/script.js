@@ -18,7 +18,7 @@ function MyCtrl($scope){
 		}
 	];
 
-	$scpe.add = function(pessoa){
+	$scope.add = function(pessoa){
 		console.log(pessoa);
 		pessoas.push(pessoa);
 	}
