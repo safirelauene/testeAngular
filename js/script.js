@@ -1,7 +1,12 @@
 var home_mod = angular.module('home', [])
 
 function MyCtrl($scope){
-	$scope.new_pessoa = "";
+	$scope.pessoa_nome = "";
+	$scope.pessoa_email = "";
+	$scope.pessoa = {
+		"nome" : "",
+		"email" : "",
+	};	
 	
 	$scope.pessoas = [
 		{
@@ -13,4 +18,8 @@ function MyCtrl($scope){
 			"email":"veronica@veronica.com",
 		}
 	];
+
+	function add(pessoa){
+		pessoas.push(pessoa);
+	}
 }
