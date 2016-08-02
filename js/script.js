@@ -20,6 +20,6 @@ function MyCtrl($scope){
 
 	$scope.add = function(pessoa){
 		console.log(pessoa);
-		pessoas.push(pessoa);
+		$scope.pessoas.push(pessoa);
 	}
 }
