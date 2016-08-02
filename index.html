@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste Angular</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/jquery.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body ng-app="home" ng-controller="MyCtrl">
+	<table>
+		<tr>
+			<td>Nome</td>
+			<td ng-repeat="pessoa in pessoas.nome"></td>
+		</tr>
+	</table>
+</body>
+</html>
