@@ -13,7 +13,11 @@
 	<table>
 		<tr>
 			<td>Nome</td>
-			<td ng-repeat="pessoa in pessoas.nome"></td>
+			<td>Email</td>			
+		</tr>
+		<tr ng-repeat="pessoa in pessoas">
+			<td>{{pessoa.nome}}</td>
+			<td>{{pessoa.email}}</td>
 		</tr>
 	</table>
 </body>
